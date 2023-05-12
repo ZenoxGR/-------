@@ -1,0 +1,25 @@
+  <form>
+    <h2>Расскажите нам о своих желаниях.</h2>
+    <label for="prenom" class="label-input">Ваша фамилия</label>
+    <input type="text" id="prenom" placeholder="Введите вашу фамилию"/>
+    <label for="nom" class="label-input">Ваше имя</label>
+    <input type="text" id="nom" placeholder="Введите ваше имя"/>
+    <label for="tel" class="label-input">Ваш телефон</label>
+    <input type="number" id="tel" placeholder="Введите ваш телефон"/>
+    <p class="titre-check">Выбор абонемента :</p>
+    <div class="groupe-check">
+        <label for="louer" class="labels-check">Абонемент в зал</label>
+        <input type="checkbox" id="louer" name="louer"/>
+    </div>
+    <div class="groupe-check">
+        <label for="acheter" class="labels-check">Сауна</label>
+        <input type="checkbox" id="acheter" name="acheter"/>
+    </div>
+    <div class="groupe-check">
+        <label for="acheter" class="labels-check">Бассейн</label>
+        <input type="checkbox" id="acheter" name="acheter"/>
+    </div>
+    <label for="txt">Сообщение</label>
+    <textarea id="txt" placeholder="Введите ваше сообщение"></textarea>
+    <button id="but" type="submit">Отправить</button>
+</form>

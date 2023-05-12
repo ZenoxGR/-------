@@ -1,0 +1,40 @@
+.content{
+    display: flex;
+    background-color: white;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:20vw;
+	float:left;
+	position:relative;
+	border: 0;
+    font-family: 'Esquina';
+}
+
+a {
+	display: block;
+	font-size:18px;
+	line-height:4em;
+	color:#ff000b;
+	padding:3px 0 2px;
+	text-transform:uppercase;
+	text-align:center;
+    text-decoration: none;
+}
+.menu li a.active, .menu > li:hover {
+    transition: all .4s ease-in-out;
+	background:#ecebeb;
+}
+
+.menu li a.active, .menu > li:not(hover){
+    transition: all .4s ease-in-out;
+	background: white;
+}
+

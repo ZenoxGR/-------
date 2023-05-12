@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/adptive/css/contact.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+<script>
+    // Создаем новый объект XMLHttpRequest
+    var xhttp = new XMLHttpRequest();
+    // Открываем файл footer.xml
+    xhttp.open("GET", "./form.xml", true);
+    // Когда файл загружен
+    xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        // Заменяем пустой футер данными из XML файла
+        document.getElementById("myForm").innerHTML = this.responseText;
+    }
+    };
+    // Загружаем файл
+    xhttp.send();
+</script>
+
+<div class="menu">
+    <h2 class="titre-menu">Меню</h2>
+    <ul class="liste-menu">
+        <li class="item-nav"><a href="index.html">Главная</a></li>
+        <li class="item-nav"><a href="gym.html">Тренажерный зал</a></li>
+        <li class="item-nav"><a href="sauna.html">Сауна</a></li>
+        <li class="item-nav"><a href="pool.html">Бассейн</a></li>
+    </ul>
+</div>
+        
+        <h1 class="titre-contact">Свяжитесь с нами!</h1>
+    <p class="contact-sous-titre">Свяжитесь с нами по телефону или почте.</p>
+
+    <div class="trois-contacts">
+        <div class="box">
+            <img src="styles/image/placeholder.svg">
+            <span>76 Веры Хоружей, Минск</span>
+        </div>
+        <div class="box">
+            <img src="styles/image/phone-call.svg">
+            <span>+375 44 553 4520</span>
+        </div>
+        <div class="box">
+            <img src="styles/image/email.svg">
+            <span>contact@yakout.com</span>
+        </div>
+    </div>
+
+<!-- Form -->
+    <form id="myForm">
+       <!-- пустая форма, который автоматически подменяется данными из xml файла -->
+    </form>
+    
+    
+    <footer class="footer">
+        <div> @BodyBoost Все права защищены. </div>
+        <div> Наш адресс: г.Минск, ул. Веры Хоружей 76</div>
+        <div class="icons">
+          <div id="soc1" class="footer_icon1"></div>
+          <div id="soc2" class="footer_icon2"></div>
+          <div id="soc3" class="footer_icon3"></div>
+        </div>
+        <div> 
+            <p>Разработал</p>
+            <p>Лобарев Павел</p>
+        </div>
+       </footer>
+    </div>
+    <script src="Js/contact.js"></script>
+
+</body>
+</html>

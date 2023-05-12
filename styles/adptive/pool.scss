@@ -1,0 +1,34 @@
+.main1_item1:hover{
+    h1{
+        border-bottom: solid 2px black;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .main1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main1_item1{
+        width: 800px;
+        margin-bottom: 2%;
+    }
+    .main_item1_photo1{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main1_item1{
+        width: 20vw;
+        max-height: 20vh;
+        margin-bottom: 2%;
+    }
+    .main_item1_photo1{
+        height: 400px;
+    }
+}

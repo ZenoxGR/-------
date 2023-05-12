@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper{
+  background-color: #e5e5e5;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bar{
+    display: flex;
+    margin-top: 2%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: url(image/pool_bar.jpg);
+    min-height: 150px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9)
+}
+
+.main1{
+  margin: 2% 0 2% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main1_item1{
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 3%;
+  flex-direction: column;
+  width: 400px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.334);
+}
+
+.main1_item1_text1, .main1_item1_text2, .main1_item1_text3, .main1_item1_text4, .main1_item1_text5, .main1_item1_text6{
+  margin-left: 2%;
+  margin-right: 2%;
+  opacity: 90%;
+}
+h1{
+  margin-bottom: 5%;
+}
+
+.texto{
+  font-size: 24px;
+}
+
+.main1_item1_photo1{
+  height: 50vh;
+  line-height: 6px;
+  background: url(image/pool.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.main1_item1_photo2{
+  height: 50vh;
+  background: url(image/pool_bar.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.main1_item1_photo3{
+  height: 50vh;
+  background: url(image/tower.jpg) center no-repeat;
+  background-size: cover;
+}
+.main1_item1_photo4{
+  height: 50vh;
+  background: url(image/school.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.main1_item1_photo5{
+  height: 50vh;
+  background: url(image/aerobic.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.main1_item1_photo6{
+  height: 50vh;
+  background: url(image/health.jpg) center no-repeat;
+  background-size: cover;
+}
