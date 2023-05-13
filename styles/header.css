@@ -6,9 +6,11 @@
 .menu{
     list-style: none;
     display: flex;
+	flex-shrink: initial;
 }
 li {
 	display: flex;
+	flex-shrink: initial;
 	justify-content: center;
 	align-items: center;
 	width:20vw;
@@ -37,4 +39,5 @@ a {
     transition: all .4s ease-in-out;
 	background: white;
 }
+
 

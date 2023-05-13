@@ -15,3 +15,9 @@
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 767px){
+    .menu, li{
+        display: block;
+    }
+}

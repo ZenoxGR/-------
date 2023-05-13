@@ -37,6 +37,26 @@ $(".card").mouseleave(function (e) {
   $(".glare").css("left", "100%");
 });
 
+const gym = document.querySelector('#gym');
+const sauna = document.querySelector('#sauna');
+const pool = document.querySelector('#pool');
+
+gym.addEventListener('click', toGym);
+sauna.addEventListener('click', toSauna);
+pool.addEventListener('click', toPool);
+
+function toGym(){
+    window.location.href = "gym.html";
+}
+function toSauna(){
+  window.location.href = "sauna.html";
+}
+function toPool(){
+  window.location.href = "pool.html";
+}
+
+
+
 const link1 = document.querySelector('#soc1');
 const link2 = document.querySelector('#soc2');
 const link3 = document.querySelector('#soc3');

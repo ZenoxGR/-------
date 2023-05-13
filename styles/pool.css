@@ -59,7 +59,7 @@ h1{
 .main1_item1_photo1{
   height: 50vh;
   line-height: 6px;
-  background: url(image/pool.jpg) center no-repeat;
+  background: url(image/pool.jpg) left no-repeat;
   background-size: cover;
 }
 
@@ -76,18 +76,18 @@ h1{
 }
 .main1_item1_photo4{
   height: 50vh;
-  background: url(image/school.jpg) center no-repeat;
+  background: url(image/school.jpg) left no-repeat;
   background-size: cover;
 }
 
 .main1_item1_photo5{
   height: 50vh;
-  background: url(image/aerobic.jpg) center no-repeat;
+  background: url(image/aerobic.jpg) left no-repeat;
   background-size: cover;
 }
 
 .main1_item1_photo6{
   height: 50vh;
-  background: url(image/health.jpg) center no-repeat;
+  background: url(image/health.jpg) left no-repeat;
   background-size: cover;
 }

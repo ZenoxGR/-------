@@ -160,6 +160,10 @@
   justify-content: center;
   border-radius: 25px;
 }
+.main2_price:hover{
+  border: solid 2px black;
+  cursor: pointer;
+}
 
 
 .icon1{

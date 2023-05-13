@@ -104,6 +104,21 @@ function offset(el){
     return {top: rect.top + scrollTop}
 }
 
+const abo1 = document.querySelector('#ab1')
+const abo2 = document.querySelector('#ab2')
+const abo3 = document.querySelector('#ab3')
+const abo4 = document.querySelector('#ab4')
+
+abo1.addEventListener('click', contact);
+abo2.addEventListener('click', contact);
+abo3.addEventListener('click', contact);
+abo4.addEventListener('click', contact);
+
+function contact(){
+    window.location.href = "contacts.html";
+}
+
+
 const link1 = document.querySelector('#soc1');
 const link2 = document.querySelector('#soc2');
 const link3 = document.querySelector('#soc3');

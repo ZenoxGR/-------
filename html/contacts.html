@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info</title>
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="../styles/adptive/css/contact.css">
     <link rel="stylesheet" href="../styles/footer.css">
@@ -14,45 +16,42 @@
 </head>
 <body>
 <script>
-    // Создаем новый объект XMLHttpRequest
+    
     var xhttp = new XMLHttpRequest();
-    // Открываем файл footer.xml
-    xhttp.open("GET", "./form.xml", true);
-    // Когда файл загружен
+    xhttp.open("GET", "../xml/form.xml", true);
     xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-        // Заменяем пустой футер данными из XML файла
         document.getElementById("myForm").innerHTML = this.responseText;
     }
     };
-    // Загружаем файл
     xhttp.send();
 </script>
 
-<div class="menu">
-    <h2 class="titre-menu">Меню</h2>
-    <ul class="liste-menu">
-        <li class="item-nav"><a href="index.html">Главная</a></li>
-        <li class="item-nav"><a href="gym.html">Тренажерный зал</a></li>
-        <li class="item-nav"><a href="sauna.html">Сауна</a></li>
-        <li class="item-nav"><a href="pool.html">Бассейн</a></li>
+<header class="content">
+        
+    <ul class="menu">
+     <li class="logo"><a href="index.html">BodyBoost</a></li>
+     <li><a href="gym.html">Тренажерный зал</a></li>
+     <li><a href="sauna.html">Сауна</a></li>
+     <li><a href="pool.html">Бассейн</a></li>
+     <li><a href="contacts.html">Контакты</a></li>
     </ul>
-</div>
+</header>
         
         <h1 class="titre-contact">Свяжитесь с нами!</h1>
     <p class="contact-sous-titre">Свяжитесь с нами по телефону или почте.</p>
 
     <div class="trois-contacts">
         <div class="box">
-            <img src="styles/image/placeholder.svg">
+            <img src="../styles/image/placeholder.svg">
             <span>76 Веры Хоружей, Минск</span>
         </div>
         <div class="box">
-            <img src="styles/image/phone-call.svg">
+            <img src="../styles/image/phone-call.svg">
             <span>+375 44 553 4520</span>
         </div>
         <div class="box">
-            <img src="styles/image/email.svg">
+            <img src="../styles/image/email.svg">
             <span>contact@yakout.com</span>
         </div>
     </div>
@@ -65,7 +64,7 @@
     
     <footer class="footer">
         <div> @BodyBoost Все права защищены. </div>
-        <div> Наш адресс: г.Минск, ул. Веры Хоружей 76</div>
+        <div> Наш адрес: г.Минск, ул. Веры Хоружей 76</div>
         <div class="icons">
           <div id="soc1" class="footer_icon1"></div>
           <div id="soc2" class="footer_icon2"></div>
@@ -77,7 +76,7 @@
         </div>
        </footer>
     </div>
-    <script src="Js/contact.js"></script>
+    <script src="../Js/contact.js"></script>
 
 </body>
 </html>
